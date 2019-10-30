@@ -26,6 +26,8 @@
 
 **a. Find, install, and try out a node-based library and try to incorporate into your lab. Document your successes and failures (totally okay!) for your writeup. This will help others in class figure out cool new tools and capabilities.**
 
+I modified the simple video doorbell to add a ringing sound when the button is pressed. 
+
 **b. Upload a video of your working modified project**
 
 [![Video Doorbell](http://img.youtube.com/vi/7t3kQw1YWbQ/0.jpg)](https://www.youtube.com/watch?v=7t3kQw1YWbQ)
