@@ -29,6 +29,10 @@ function takePicture(){
   socket.emit('takePicture');
 }
 
+function dingDong(){
+  document.getElementById('doorbell').play();
+}
+
 //-- Addition: This function receives the new image name and applies it to html element.
 
 socket.on('newPicture', function(msg) {
@@ -38,7 +42,10 @@ socket.on('newPicture', function(msg) {
 // background of the webpage based on the data in the message
 socket.on('server-msg', function(msg) {
   msg = msg.toString();
-  console.log('msg:', msg);
+  if (msg === 'light'){
+    dingDong();
+    socket.emit('takePicture');
+  }
   switch (msg) {
     case "light":
       document.body.style.backgroundColor = "white";
